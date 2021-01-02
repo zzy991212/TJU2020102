@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div id="container"></div>
+    <div id="info">数据展示：</div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <form action={{url_for('search')}} method="POST">
+        <p>
+            <input type="text" name="val">
+            <input type="submit" name="op" value="查询">
+            <input type="submit" name="op" value="显示全部">
+        </p>
+     </form>
+
+</body>
+
+</html>

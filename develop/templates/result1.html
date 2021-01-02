@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>人民网分析平台-事件分析</title>
+
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!--  <link rel="stylesheet" type="text/css" href="../css/web.css">-->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/font.css">-->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/nav-style.css">-->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/search-style.css">-->
+
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/result.css')}}" /> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nav-style.css')}}" />
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/search-style.css')}}" /> -->
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    <!--  <script src="../script/search.js"></script>-->
+
+    <script src="{{url_for('static', filename='js/search.js')}}"></script>
+    <script src="{{url_for('static', filename='js/result.js')}}"></script>
+
+    <!--  <link rel="icon" type="image/png" sizes="144x144" href="../image/logo-small.jpg" />-->
+    <link rel="icon" type="image/png" sizes="144x144" href="{{url_for('static', filename='imgs/logo-small.jpg')}}" />
+  </head>
+
+  <body>
+    <!-- <div style="position: fixed; top: 0;"> -->
+    <nav class="nav">
+      <img
+        src="{{url_for('static', filename='imgs/tjuu.png')}}"
+        width="13%"
+        height="13%"
+        style="justify-content: flex-start"
+      />
+      <a href="/" class="nav-item" active-color="orange" style="justify-content: flex-end">HOME</a>
+      <a href="/word-cloud" class="nav-item">WORDS CLOUD</a>
+      <a href="/hot-words" class="nav-item">HOT WORDS</a>
+      <a href="/water" class="nav-item">WATERFALL</a>
+      <a href="/about-us" class="nav-item">ABOUT US</a>
+      <span class="nav-indicator"></span>
+    </nav>
+    <!-- </div> -->
+
+    <div id="mainContentDiv">
+      <div class="mainDivMainInfoDiv">
+        <div class="subInfoDiv">
+          <!-- 标题 -->
+          <div class="bigheadText">
+            <b>{{hot.event}}</b>
+          </div>
+
+          <div class="link-top1"></div>
+
+          <!-- 摘要 -->
+          <div class="headText">
+            <b>事件摘要</b>
+          </div>
+          <div class="abstract">{{hot.abstract}}</div>
+
+          <div class="link-top2"></div>
+
+          <!-- 相关内容 -->
+          <div class="rela_headText">
+            <b>相关内容</b>
+          </div>
+
+          <div class="rela">
+            <div style="font-size: 15px; padding-bottom: 5px;"><b>共{{associate_event|length}}条</b></div>
+            {% for a_event in associate_event %}
+            <a href="/result1/{{a_event.event}}" style="color: rgb(85, 85, 85)">{{a_event.event}}</a>&nbsp;&nbsp; {%
+            endfor %}
+          </div>
+
+          <div class="link-top3"></div>
+
+          <!-- 知识图谱 -->
+          <div class="know_headText" style="height: auto">
+            <div style="height: 40px">
+              <b>知识图谱</b>
+            </div>
+
+            <div
+              id="moutNode"
+              style="
+                background: #ffffff;
+                position: relative;
+                left: 4.5%;
+                float: left;
+                height: 510px;
+                width: 870px;
+                border-width: 5px;
+                border-style: double;
+                border-color: black;
+                justify-content: center;
+              "
+            >
+              <div id="mountNode" class="svg-container" style="width: 100%; height: 90%"></div>
+              <style type="text/css">
+                .svg-container {
+                  display: inline-block;
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  padding-bottom: 100%;
+                  vertical-align: middle;
+                  overflow: hidden;
+                }
+              </style>
+            </div>
+            <div>
+              <link rel="stylesheet" href="{{url_for('static', filename='css/kg.css')}}" />
+              <script src="{{url_for('static', filename='js/d3.v3.min.js')}}"></script>
+              <script src="{{url_for('static', filename='js/kg.js')}}"></script>
+              <script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+              <script src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
+              <script>
+                contentHook = function (item) {
+                  return '<div>' + item.name + '</div>'
+                }
+
+                $(function () {
+                  $('.tryjson').ready(function () {
+                    $.ajax({
+                      url: '/returnjson?value={{hot.event}}',
+                      type: 'get',
+                      success: function (data) {
+                        $('.tryjson').html('加载成功')
+                        $('svg').remove()
+                        var config = {
+                          content: null,
+                          contentHook: contentHook,
+                          nodeColor: null,
+                          linkColor: null,
+                          width: 1000,
+                          height: 500,
+                        }
+                        initKG(data, config, '#mountNode') // mountNode为容器名
+                      },
+                    })
+                  })
+                })
+              </script>
+            </div>
+          </div>
+
+          <div class="link-top4"></div>
+
+          <div class="heat_headText">
+            <b>热度曲线</b>
+            <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+            <div id="charts" style="width: 70%; height: 400%; text-align: center"></div>
+            <script>
+              pic(xlist={{xlist}}, timelist={{timelist|tojson}});
+            </script>
+          </div>
+
+          <div class="link-top5"></div>
+
+          <div class="emotion_headText">
+            <b>情感分析</b>
+          </div>
+
+          <div class="emotion">
+            <div>
+              情感倾向为：
+              <b><span id="emo"></span></b>          
+            </div>
+
+            <div id="emo_value">具体情感倾向分数：<b>{{'%.2f' % emotion_value}}</b>（满分100）</div>
+            <script>
+              var x = {{emotion_value}};
+              if(x >= 70){
+                document.getElementById('emo').innerHTML = "积极🙂";
+                document.getElementById('emo').style="color:#e00009";
+              }
+              else{
+                document.getElementById('emo').innerHTML = "消极🙁";
+                document.getElementById('emo').style="color:#67605f";
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tmp = 1700 + {{associate_event|length}} * 1;
+      document.getElementById("mainContentDiv").style.height = tmp + 'px';
+<!--     document.getElementById("mainContentDiv").style.height = str(int(window.height) + 100)+'px';-->
+    </script>
+  </body>
+
+  <style>
+    body {
+      background: url('/static/imgs/background.jpg');
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* 整体布局 */
+    #mainContentDiv {
+      position: absolute;
+      width: 80%;
+      height: 250%;
+      background: whitesmoke;
+      top: 10.53%;
+      left: 10%;
+    }
+
+    /* 中间的过度的横线 */
+    .link-top1 {
+      position: relative;
+      top: 30px;
+      left: 4%;
+      width: 90%;
+      height: 1px;
+      border-top: solid #e8edf3 1px;
+    }
+
+    .link-top2 {
+      position: relative;
+      top: 70px;
+      left: 4%;
+      width: 90%;
+      height: 1px;
+      border-top: solid #e8edf3 1px;
+    }
+
+    .link-top3 {
+      position: relative;
+      top: 105px;
+      left: 4%;
+      width: 90%;
+      height: 1px;
+      border-top: solid #e8edf3 1px;
+    }
+
+    .link-top4 {
+      position: relative;
+      top: 585px;
+      left: 4%;
+      width: 90%;
+      height: 1px;
+      border-top: solid #e8edf3 1px;
+    }
+
+    .link-top5 {
+      position: relative;
+      top: 130px;
+      left: 4%;
+      width: 90%;
+      height: 1px;
+      border-top: solid #e8edf3 1px;
+    }
+
+    /* 背景框 */
+    .subInfoDiv {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      background: white;
+      border: 1px solid #eaeaea;
+    }
+
+    /* 鼠标触碰变色 */
+    /* .subInfoDiv:hover {
+    background: rgba(0, 0, 0, 0.05);
+} */
+
+    .mainDivMainInfoDiv {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: whitesmoke;
+    }
+
+    /* 大标题 */
+    .bigheadText {
+      position: relative;
+      top: 20px;
+      left: 4%;
+      /* width: 30%; */
+      /* height: 30%; */
+      background: rgba(0, 0, 0, 0);
+      font-size: 28px;
+    }
+
+    /* 副标题 */
+    .headText {
+      position: relative;
+      top: 40px;
+      left: 4.5%;
+      width: 30%;
+      /* height: 20px; */
+      background: rgba(0, 0, 0, 0);
+      font-size: 18px;
+    }
+
+    .rela_headText {
+      position: relative;
+      top: 80px;
+      left: 4.5%;
+      width: 30%;
+      /* height: 20px; */
+      background: rgba(0, 0, 0, 0);
+      font-size: 18px;
+    }
+
+    .know_headText {
+      position: relative;
+      top: 115px;
+      left: 4.5%;
+      width: 30%;
+      /* height: 20px; */
+      background: rgba(0, 0, 0, 0);
+      font-size: 18px;
+    }
+
+    .heat_headText {
+      position: relative;
+      top: 150px;
+      left: 4.5%;
+      width: 30%;
+      /* height: 20px; */
+      background: rgba(0, 0, 0, 0);
+      font-size: 18px;
+    }
+
+    .emotion_headText {
+      position: relative;
+      top: 145px;
+      left: 4.5%;
+      width: 30%;
+      /* height: 20px; */
+      background: rgba(0, 0, 0, 0);
+      font-size: 18px;
+    }
+
+    /* 摘要 */
+    .abstract {
+      position: relative;
+      top: 50px;
+      left: 5%;
+      width: 90%;
+      background: rgba(0, 0, 0, 0);
+      font-size: 14px;
+      color: rgb(102, 102, 102);
+    }
+
+    .rela {
+      position: relative;
+      top: 90px;
+      left: 5%;
+      width: 90%;
+      background: rgba(0, 0, 0, 0);
+      font-size: 14px;
+      color: rgb(102, 102, 102);
+    }
+
+    .emotion {
+      position: relative;
+      top: 155px;
+      left: 5%;
+      width: 90%;
+      background: rgba(0, 0, 0, 0);
+      font-size: 14px;
+      color: rgb(102, 102, 102);
+    }
+
+    .mainText {
+      position: relative;
+      top: 52%;
+      left: 4%;
+      width: 90%;
+      background: rgba(0, 0, 0, 0);
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      font-size: 12px;
+      color: rgb(102, 102, 102);
+    }
+  </style>
+</html>

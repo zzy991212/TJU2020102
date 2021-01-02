@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>人民网分析平台</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+</head>
+<body>
+<!--    <a href="/">&larr; 返回</a>-->
+<div>
+    <a href="/"><h1 align="center" class='vintage3'>人民网分析平台<small>  天津大学新工科项目制实践</small></h1></a>
+</div>
+
+<div style="background: white;padding: 10px;">
+    <marquee>
+        <span direction="right">
+            采集互联网开放言论数据&emsp; &emsp; &emsp; &emsp;
+            构建基于言论数据的知识图谱&emsp; &emsp; &emsp; &emsp;
+            基于言论数据和知识图谱进行事件发现&emsp; &emsp; &emsp; &emsp;
+            对事件进行自动化概述&emsp; &emsp; &emsp; &emsp;
+            分析社会群体对所发现的事件的态度&emsp; &emsp; &emsp; &emsp;
+            具有可视化展示功能的平台&emsp; &emsp; &emsp; &emsp;
+        </span>
+    </marquee>
+</div>
+
+<div>
+    <center><img src="https://picture-bed-bucket.oss-cn-beijing.aliyuncs.com/img/20201012103437.png" class="img-responsive center-block" width="150" height="150"></div>center>
+</div>
+
+<div class="btn-group" style="float:center;display:flex;width:100%">
+    {% for y in year %}
+        <button id="time{{y}}" type="button" class="btn btn-default">{{y}}</button>
+    {% endfor %}
+</div>
+
+<div class="form-group" id="words_cloud">
+    <p class="text-center">可点击年份按钮生成词云</p>
+<!--    <center><img src="{{url_for('static', filename='pywcloud.png')}}" class="img-responsive center-block"></center>-->
+</div>
+<hr>
+<div>
+    <p class="text-center">事件关键词检索</p>
+</div>
+
+<!--    <div id="info">数据展示：</div>-->
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<form action={{url_for('web')}} method="POST">
+    <p align="center">
+        <input type="text" name="val">
+        <input type="submit" name="op" value="查询">
+    </p>
+ </form>
+
+<div class="container">
+    <footer>
+        <p class="text-center">
+            <a href="https://gitee.com/shieldforever" style="float:center">
+            provided by shieldforever
+            </a>
+            <a style="float:center"> (●'◡'●) </a>
+<!--            <script>-->
+<!--                var icon ="\u263a"-->
+<!--                document.write(icon)-->
+<!--            </script>-->
+            <a href="http://www.epeenofront.com/" style="float:center">
+                epeenofront
+            </a>
+        </p>
+    </footer>
+</div>
+
+<script typr="text/javascript">
+{% for y in year %}
+    $(function() {
+        $('#time{{y}}').click(function() {
+            document.getElementById("words_cloud").innerHTML="<p class='text-center'>正在生成词云······</p>";
+            $.ajax({
+                url: '/words_cloud/{{y}}',
+                type: 'get',
+                success: function(data){
+    <!--                $('#hh').remove();-->
+                    document.getElementById("words_cloud").innerHTML=data;
+<!--                    console.log(data);-->
+    <!--                $('#hh').load(data);-->
+                }
+            })
+        })
+    })
+{% endfor %}
+</script>
+
+
+
+<style>
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 50px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 50px;
+}
+marquee {
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+.carousel .item {
+height: 200px;
+background-color: #777;
+}
+.carousel-inner > .item > img {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+height: 500px;
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.vintage1{
+background: #EEE url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAHklEQVQImWNkYGBgYGD4//8/A5wF5SBYyAr+//8PAPOCFO0Q2zq7AAAAAElFTkSuQmCC) repeat;
+text-shadow: 5px -5px black, 4px -4px white;
+font-weight: bold;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text }
+.vintage2{
+color: transparent;
+-webkit-text-stroke: 1px red;
+letter-spacing: 0.04em;}
+.vintage3 {
+color: transparent;
+background-color : orange;
+text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+-webkit-background-clip : text;
+}
+.vintage4{
+color: gold;
+letter-spacing: 0;
+text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135 }
+.vintage5{
+    font-family:cursive;text-shadow:6px 2px 2px #333;color:deeppink
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0  0;
+    }
+    100% {
+        background-position: -100%  0;
+    }
+}
+        </style>
+</body>
+
+</html>

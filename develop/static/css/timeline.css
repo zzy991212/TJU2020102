@@ -1,0 +1,57 @@
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/************Timeline**************/
+/* Timeline Container */
+.timeline {
+    border-left: 5px solid #dddddd;
+    padding-bottom: 3em;
+    position: relative;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1.47em;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background: #dddddd;
+    border: 5px solid #dddddd;
+}
+
+/* Individual Timeline Item */
+.tl-node {
+    padding-left: 1em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.tl-node a {
+    display: block;
+}
+
+.tl-node:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.95em;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #fff;
+    border: 5px solid #dddddd;
+}
+
+/* Timestamp */
+.tl-stamp {
+    font-size: 0.7em;
+    color: gray;
+}
+
+
+/************End Timeline**************/

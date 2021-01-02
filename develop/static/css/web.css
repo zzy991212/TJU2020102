@@ -1,0 +1,151 @@
+body {
+    background: url("../imgs/background.jpg");
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 整体布局 */
+#mainContentDiv {
+    position: absolute;
+    width: 80%;
+    height: 65%;
+    background: whitesmoke;
+    top: 10.53%;
+    left: 10%;
+}
+
+/* 第一个框 */
+.mainDivMainImgDiv {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    background: white;
+}
+
+/* 搜索框 */
+/* .search {
+    position: absolute;
+    left: 4%;
+    top: 40px;
+} */
+
+/* 中间的过度的横线 */
+.link-top {
+    position: absolute;
+    top: 90px;
+    left: 4%;
+    width: 90%;
+    height: 1px;
+    border-top: solid #e8edf3 1px;
+}
+
+/* 背景框 */
+.subInfoDiv {
+    position: relative;
+    width: 97%;
+    height: 100px;
+    right: 0    ;
+    background: white;
+    border: 1px solid #eaeaea;
+}
+
+/* 鼠标触碰变色 */
+.subInfoDiv:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* 右侧背景框 */
+.subInfoDiv_right {
+    position: relative;
+    width: 97%;
+    height: 100%;
+    right: 4%;
+    background: white;
+    border: 1px solid #eaeaea;
+}
+
+/* 第二个框: 搜索结果框 */
+.mainDivMainInfoDiv_left{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background: whitesmoke;
+    top: 150px;
+    float: left;
+}
+
+/* 第三个框: 相关推荐 */
+.mainDivMainInfoDiv_right{
+    position: relative;
+    width: 20%;
+    left: 0%;
+    height: 100%;
+    background: whitesmoke;
+    top: 150px;
+    right: 0px;
+    float: right;
+    display: flex;
+}
+
+/* 标题 */
+.headText {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    /* width: 30%; */
+    height: 30%;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* 右侧标题 */
+.headText_right {
+    position: absolute;
+    top: 13px;
+    left: 8%;
+    width: 100%;
+    height: 30%;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* 摘要 */
+.mainText {
+    position: absolute;
+    top: 52%;
+    left: 4%;
+    width: 85%;
+    background: rgba(0, 0, 0, 0);
+    /* text-align: justify;
+    text-justify: inter-ideograph;IE */
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    float:left;
+}
+
+.emotionText {
+    position: absolute;
+    top: 40%;
+    /* width: 30%; */
+    right: 4%;
+    height: 30%;
+    font-size: 22px;
+    color: #e00009;
+    float: right;
+}
+
+/* 推荐内容 */
+.mainText_right {
+    position: absolute;
+    top: 35px;
+    left: 6%;
+    width: 100%;
+    height: 30%;
+    background: rgba(0, 0, 0, 0);
+    font-size: 14px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tryjson</title>
+   
+</head>
+
+<body>
+
+    <div class="tryjson">正在加载知识图谱</div>
+    <div id="mountNode"
+        style="background:#ffffff;width:500px;height:500px;border-width:5px;border-style:double;border-color: black;">
+    </div>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/kg.css')}}" />
+    <script src="{{url_for('static', filename='js/d3.v3.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/kg.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/usekg.js')}}"></script>
+
+</body>
+
+</html>

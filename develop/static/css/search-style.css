@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 500px;
+    height: 820px;
+    margin: 0 auto;
+}
+div.search {padding: 30px 0;}
+
+form {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    padding-left: 30px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+}
+
+/*搜索框3*/
+.bar {
+    
+}
+.bar form {
+    background: #ffffff;
+}
+.bar input, .bar button {
+    background: transparent;
+}
+.bar button {
+    top: 0;
+    right: 0;
+}
+
+.bar button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    /* color: #F9F0DA; */
+}
+

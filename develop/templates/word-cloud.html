@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>人民网分析平台-年度词云</title>
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/btn.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nav-style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/search-style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/ndnb.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/timeline.css')}}" />
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+
+    <script src="{{url_for('static', filename='js/search.js')}}"></script>
+    <!--    <style type="text/css">-->
+    <!--        #float_left {-->
+    <!--            width: 30px;-->
+    <!--            height: 245px;-->
+    <!--            position: fixed;-->
+    <!--            top: 25%;-->
+    <!--            left: 0px;-->
+    <!--        }-->
+
+    <!--        #float_left ul li {-->
+    <!--            list-style: none;-->
+    <!--            width: 30px;-->
+    <!--            height: 20px;-->
+    <!--&lt;!&ndash;            background-image: url(../img/lyx.png);&ndash;&gt;-->
+    <!--&lt;!&ndash;            background-repeat: no-repeat;&ndash;&gt;-->
+    <!--            border-bottom: 1px solid white;-->
+    <!--            cursor: pointer;-->
+    <!--            transition: all 0.5s ease;-->
+    <!--        }-->
+    <!--    </style>-->
+
+    <!-- 设置标签页图标 -->
+    <link rel="icon" type="image/png" sizes="144x144" href="{{url_for('static', filename='imgs/logo-small.jpg')}}" />
+</head>
+
+<body background="{{url_for('static', filename='imgs/background.jpg')}}">
+    <div style="position: fixed; top: 0;">
+        <nav class="nav">
+            <img src="{{url_for('static', filename='imgs/tjuu.png')}}" width="13%" height="13%"
+                style="justify-content: flex-start;" />
+            <a href="/" class="nav-item" active-color="orange" style="justify-content: flex-end;">HOME</a>
+            <a href="/word-cloud" class="nav-item">WORDS CLOUD</a>
+            <a href="/hot-words" class="nav-item">HOT WORDS</a>
+            <a href="/water" class="nav-item">WATERFALL</a>
+            <a href="/about-us" class="nav-item">ABOUT US</a>
+            <span class="nav-indicator"></span>
+        </nav>
+        <h1 align="center" id="title"
+        style="font-family: kawayi;font-size: 80px; margin:30px 0px 30px 0px; color: rgb(255, 255, 255);">年度词云</h1>
+        
+    </div>
+    <div id="word_cloud_images_list" style="position: fixed; bottom: 2%; text-align: center;background:0xffffff;">
+        <img id="yearcloud" src="/static/imgs/word_cloud_imgs/{{cur_year_list[0]}}.png" width="65%" height="20%"
+            style="justify-content: flex-start;" />
+    </div>
+
+    <div style="position: fixed; left: 0;bottom: 3%;">
+        <ol class="timeline">
+            {% for cur_year in cur_year_list %}
+            <li class="tl-node">
+                <!-- <div class="tl-stamp">小标题</div> -->
+                <!-- <div class="tl-content">{{cur_year}}</div> -->
+                <a href="#" style="color: white; font-size: 1em;" onclick="changePic({{cur_year}})">{{cur_year}}</a>
+            </li>
+            {% endfor %}
+        </ol>
+        <script type="text/javascript">
+            function CheckImgExists(imgurl) {
+                return new Promise(function(resolve, reject) {
+                    var ImgObj = new Image(); //判断图片是否存在
+                    ImgObj.src = imgurl;
+                    ImgObj.onload = function(res) {
+                        resolve(res);
+                    }
+                    ImgObj.onerror = function(err) {
+                        reject(err);
+                    }
+                }).catch((e) => {});
+            }
+            function changePic(cur_year){
+                var string = '';
+                for(var i = 0; i < 5; i++){
+　　　　　           string += Math.floor(Math.random() * 10)
+        　　　　 }
+                var src = '/static/imgs/word_cloud_imgs/' + cur_year + '.png?' + Math.floor((Math.random())*100);
+<!--                if (!CheckImgExists('/static/imgs/word_cloud_imgs/' + cur_year + '.png')){-->
+<!--                    alert("sdfa");-->
+<!--                    $('#yearcloud').attr('src','https://picture-bed-bucket.oss-cn-beijing.aliyuncs.com/img/20201012103437.png');-->
+<!--                }-->
+<!--                else{-->
+                $('#yearcloud').attr('src',src);
+<!--                }-->
+            }
+        </script>
+    </div>
+
+    <div style="position: fixed; right: 0;width: 100px;bottom: 5%;">
+            {% if pagenum >= 2 %}
+            <a href="/word-cloud?pagenum={{pagenum-1}}" class="myButton"
+                style="font-size:10px;padding:15px 20px;">&lt;&lt;</a>
+            {% endif %}
+
+            {% for pre_page in pre_page_list %}
+            <a href="/word-cloud?pagenum={{pre_page}}" class="myButton"
+                style="font-size:10px;padding:15px 20px;">第{{pre_page}}页</a>
+            {% endfor %}
+            <a href="/word-cloud?pagenum={{pagenum}}" class="myButton" style="font-size:10px;padding:15px 20px;">当前页</a>
+            {% for next_page in next_page_list %}
+            <a href="/word-cloud?pagenum={{next_page}}" class="myButton"
+                style="font-size:10px;padding:15px 20px;">第{{next_page}}页</a>
+            {% endfor %}
+            {% if pagenum <= 7 %}
+            <a href="/word-cloud?pagenum={{pagenum+1}}" class="myButton"
+                style="font-size:10px;padding:15px 20px;">&gt;&gt;</a>
+            {% endif %}
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silder</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/silder.css')}}" />
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/make_reci_echarts.js')}}"></script>
+    <script src="{{url_for('static', filename='js/silder.js')}}"></script>
+    <style>
+        .a,.b,.c {
+            width: 500px;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a"></div>
+    <div class="heat_headText">
+    <b>年度热词曲线</b>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="charts" style="width: 70%; height: 400%; text-align: center"></div>
+    </div>
+</body>
+
+<script>
+    ZUI.silder({
+        elem: '.a',
+        color: '#1E9FFF',
+        pos: '0%',
+        showNum: true,
+        count: 74   ,
+        disable: false,
+        callBackMove: function (num) {
+            // console.log('move', num);
+        },
+        callBackMouseup: function (num) {
+            // console.log('up', num);
+        }
+    })
+</script>
+<script>
+make_reci_echarts(1946);
+</script>
+
+</html>

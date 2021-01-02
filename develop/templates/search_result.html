@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>人民网分析平台-搜索结果</title>
+
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!--  <link rel="stylesheet" type="text/css" href="../css/web.css">-->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/font.css">-->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/nav-style.css">-->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/search-style.css">-->
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/web.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nav-style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/search-style.css')}}" />
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    <!--  <script src="../script/search.js"></script>-->
+
+    <script src="{{url_for('static', filename='js/search.js')}}"></script>
+
+    <!--  <link rel="icon" type="image/png" sizes="144x144" href="../image/logo-small.jpg" />-->
+    <link rel="icon" type="image/png" sizes="144x144" href="{{url_for('static', filename='imgs/logo-small.jpg')}}" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <img
+        src="{{url_for('static', filename='imgs/tjuu.png')}}"
+        width="13%"
+        height="13%"
+        style="justify-content: flex-start"
+      />
+      <a href="/" class="nav-item" active-color="orange" style="justify-content: flex-end">HOME</a>
+      <a href="/word-cloud" class="nav-item">WORDS CLOUD</a>
+      <a href="/hot-words" class="nav-item">HOT WORDS</a>
+      <a href="/water" class="nav-item">WATERFALL</a>
+      <a href="/about-us" class="nav-item">ABOUT US</a>
+      <span class="nav-indicator"></span>
+    </nav>
+
+    <div id="mainContentDiv">
+      <!-- 第一个框: 搜索框 & 记录条数 -->
+      <div class="mainDivMainImgDiv">
+        <!-- 搜索框 -->
+        <div class="search bar" style="font-size: 18px">
+          <form method="POST">
+            <input type="text" name="val" placeholder="这里应该是搜索的内容" onkeydown="entersearch()" />
+            <button type="button" onclick="jmp_toto_search()"></button>
+          </form>
+        </div>
+        <!-- 分界横线 -->
+        <div class="link-top"></div>
+        <!-- 记录条数 -->
+        <div style="position: absolute; top: 95px; left: 4%">共搜索到<span>【{{ss|length}}】</span>条记录</div>
+      </div>
+
+      <!-- 左侧搜索结果框 -->
+      <div class="mainDivMainInfoDiv_left">
+        {% for s in ss %}
+        <div class="subInfoDiv">
+          <div class="headText">
+            <a href="/result1/{{s.event}}" style="color: #333; font-size: 17px;"><b>{{s.event}}</b></a>
+            <span style="color: #c05850; font-size: 14px;"><b>{{s.starttime}}~{{s.endtime}}</b></span>
+          </div>
+          <div class="mainText">{{s.abstract}}</div>
+          <div class="emotionText" >
+            <b style="{{s.color}}">{{s.face}}</b>
+          </div>
+
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- 右侧相关推荐框 -->
+
+      <div class="mainDivMainInfoDiv_right">
+        <div class="subInfoDiv_right">
+          <div class="headText_right">
+            <a href="" style="color: #333"><b>相关推荐</b></a>
+            <div class="mainText_right">
+              <a href="/search_result?value=奥运" style="color: rgb(85, 85, 85)">奥运</a><br />
+              <a href="/search_result?value=胡锦涛" style="color: rgb(85, 85, 85)">胡锦涛</a><br />
+              <a href="/search_result?value=中国队" style="color: rgb(85, 85, 85)">中国队</a><br />
+            </div>
+          </div>
+        </div>
+        <script>
+          document.getElementsByClassName("subInfoDiv_right")[0].style.height = {{ss|length}}*100+'px';
+        </script>
+      </div>
+    </div>
+
+    <script>
+      if({{ss|length}} >= 4)
+        document.getElementById("mainContentDiv").style.height = {{ss|length}}*100+30+'px';
+    </script>
+  </body>
+</html>

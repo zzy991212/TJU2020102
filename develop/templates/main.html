@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>人民网分析平台-主页</title>
+
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/btn.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nav-style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/search-style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/ndnb.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/silder.css')}}" />
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+
+    <script src="{{url_for('static', filename='js/search.js')}}"></script>
+    <script src="{{url_for('static', filename='js/make_reci_echarts.js')}}"></script>
+    <script src="{{url_for('static', filename='js/silder.js')}}"></script>
+
+    <!-- 设置标签页图标 -->
+    <link rel="icon" type="image/png" sizes="144x144" href="{{url_for('static', filename='imgs/logo-small.jpg')}}"/>
+    <!-- <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="./image/logo-nav.png"/> -->
+</head>
+
+<body background="{{url_for('static', filename='imgs/background.jpg')}}">
+    <div style="position: fixed; top: 0;">
+        <nav class="nav">
+            <img src="{{url_for('static', filename='imgs/tjuu.png')}}"  width="13%" height="13%" style="justify-content: flex-start;"/>
+            <a href="/" class="nav-item" active-color="orange" style="justify-content: flex-end;">HOME</a>
+            <a href="/word-cloud" class="nav-item">WORDS CLOUD</a>
+            <a href="/hot-words" class="nav-item">HOT WORDS</a>
+            <a href="/water" class="nav-item">WATERFALL</a>
+            <a href="/about-us" class="nav-item">ABOUT US</a>
+            <span class="nav-indicator"></span>
+        </nav>
+    </div>
+<!--    <h1 align="center"-->
+<!--        style="font-family: BigTitle;font-size: 90px; margin:50px 0px 0px 0px; color: rgb(255, 255, 255);">人民网分析平台</h1>-->
+    <div style="margin-top:8%; text-align: center;">
+        <img align="center" src="/static/imgs/title0.png" width="30%" style="justify-content: flex-start;">
+    </div>
+
+    <!-- 弹幕 -->
+    <div style="font-family: kawayi;font-size: 0px;  padding: 10px;">
+        <marquee>
+            <span direction="right" style="color: aliceblue;">
+                采集互联网开放言论数据&emsp; &emsp; &emsp; &emsp;
+                构建基于言论数据的知识图谱&emsp; &emsp; &emsp; &emsp;
+                基于言论数据和知识图谱进行事件发现&emsp; &emsp; &emsp; &emsp;
+                对事件进行自动化概述&emsp; &emsp; &emsp; &emsp;
+                分析社会群体对所发现的事件的态度&emsp; &emsp; &emsp; &emsp;
+                具有可视化展示功能的平台&emsp; &emsp; &emsp; &emsp;
+            </span>
+        </marquee>
+    </div>
+
+    <div class="search bar" style="font-size: 18px;">
+<!--        <form>-->
+<!--            <input type="text" placeholder="请 输 入 您 要 搜 索 的 内 容 . . .">-->
+<!--            <button type="button" onclick="jmp_to_search()"></button>-->
+<!--        </form>-->
+<!--        action={{url_for('web')}} -->
+        <form method="POST">
+            <input type="text" name="val" placeholder="请 输 入 您 要 搜 索 的 内 容 . . ." onkeydown="entersearch()">
+            <button type="button" onclick="jmp_to_search()"></button>
+         </form>
+    </div>
+
+    <div align="center" style="float:center; display:flex; width:100%; justify-content: center; margin: 50px 20px 50px 0px;" >
+        <!-- <marquee> -->
+            <a href="/search_result?value=杨洁篪" class="myButton">杨洁篪</a>
+            <a href="/search_result?value=胡锦涛" class="myButton">胡锦涛</a>
+            <a href="/search_result?value=温家宝" class="myButton">温家宝</a>
+            <a href="/search_result?value=中国队" class="myButton">中国队</a>
+        <!-- </marquee> -->
+    </div>
+
+    <div style="margin-top:6%;">
+        <p align="center">
+            <a target="_blank" href="https://gitee.com/shieldforever" style="color:white;text-decoration:none;"> provided by shieldforever(●'◡'●) </a>
+        </p>
+    </div>
+
+</body>
+
+
+</html>

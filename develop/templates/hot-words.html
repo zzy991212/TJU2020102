@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hot Words</title>
+
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nav-style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/search-style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/ndnb.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/silder.css')}}" />
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+
+    <script src="{{url_for('static', filename='js/search.js')}}"></script>
+    <script src="{{url_for('static', filename='js/xhx.js')}}"></script>
+    <script src="{{url_for('static', filename='js/silder.js')}}"></script>
+    <style>
+        .a,.b,.c {
+            width: 500px;
+                margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+
+    <!-- 设置标签页图标 -->
+    <link rel="icon" type="image/png" sizes="144x144" href="{{url_for('static', filename='imgs/logo-small.jpg')}}"/>
+    <!-- <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="./image/logo-nav.png"/> -->
+</head>
+
+<body background="{{url_for('static', filename='imgs/background.jpg')}}">
+    <div style="position: fixed; top: 0;">
+        <nav class="nav">
+            <img src="{{url_for('static', filename='imgs/tjuu.png')}}" width="13%" height="13%"
+                style="justify-content: flex-start;" />
+            <a href="/" class="nav-item" active-color="orange" style="justify-content: flex-end;">HOME</a>
+            <a href="/word-cloud" class="nav-item">WORDS CLOUD</a>
+            <a href="/hot-words" class="nav-item">HOT WORDS</a>
+            <a href="/water" class="nav-item">WATERFALL</a>
+            <a href="/about-us" class="nav-item">ABOUT US</a>
+            <span class="nav-indicator"></span>
+        </nav>
+    </div>
+
+    <div id="show hot_words" style="position: fixed; top: 20%; left: 25%;">
+        <div class="heat_headText" style="position: absolute; top: 0px; left: -150px;">
+            <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+            <div id="charts" style="width: 1000px; height: 400%; text-align: center"></div>
+        </div>
+        <div style="position: absolute; top: 390px; left: 10px;">
+            <p style="color:white; width:80px;">时光之轴</p>
+        </div>
+        <div class="a" style="position: absolute; top: 350px; left: 0px;"></div>
+    </div>
+
+</body>
+<script>
+    ZUI.silder({
+        elem: '.a',
+        color: '#1E9FFF',
+        pos: '0%',
+        showNum: true,
+        count: 34   ,
+        disable: false,
+        callBackMove: function (num) {
+            // console.log('move', num);
+        },
+        callBackMouseup: function (num) {
+            // console.log('up', num);
+        }
+    })
+</script>
+<script>
+make_reci_echarts(1946);
+</script>
+
+</html>
