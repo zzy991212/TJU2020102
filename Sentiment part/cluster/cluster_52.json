@@ -1,0 +1,1 @@
+{"cluster_id": "cluster_52", "topic": "", "abstract": "记者李  斌）。", "relate_article_list": ["2008-08-02-0014"], "keywords": ["记者", "李", "斌"], "knowledge-data": {"nodes": {"1": {"name": "记者", "type": "nnt"}, "2": {"name": "李", "type": "ng"}}, "links": [{"source": "1", "target": "2", "rela": "修饰", "type": "att"}]}}

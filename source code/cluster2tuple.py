@@ -160,7 +160,11 @@ def find_3_tuple(cluster_path):
             result += dic[obj]["动宾关系"][0]
 
     jdic['topic'] = result
-    jdic['abstract'] = HanLP.getSummary(whole_data,100)
+    try:
+        jdic['abstract'] = HanLP.getSummary(whole_data,100)
+    except Exception as e:
+        print("Wrong!")
+        pass
     # zhaiyao = [] 
     
     # for abst in final_t:
@@ -213,11 +217,16 @@ def find_att(x,now,dic):
 if __name__=="__main__":
     L=int(input("L_year:"))
     R=int(input("R_year:"))
+    Mon = int(input("Month:"))
+    if Mon < 10:
+        mm = "0"+str(Mon)
+    else:
+        mm = str(Mon)
     clu_dir = "./cluster"
     sentence_dir = "./tokens"
     Jv = JClass("com.hankcs.hanlp.corpus.dependency.CoNll.CoNLLWord")
     for i in range(L,R+1):# 按年找热点事件
-        dir = clu_dir+"/"+str(i)
+        dir = clu_dir+"/"+str(i)+"-"+mm
         if not os.path.isdir(dir):
             continue
 

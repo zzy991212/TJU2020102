@@ -1,0 +1,347 @@
+{
+    "cluster_id": "cluster_712",
+    "topic": "媒体指出军团遥遥领先",
+    "abstract": "越南媒体20日发表评论指出。北京奥运会赛程过半。东道主中国体育军团在奥运会金牌榜上遥遥领先。表明中国体育经过多年的艰苦奋斗取得了巨大成果。中国奥运战略在2004年雅典奥运会上就初显成效。北京奥运会赛程已过大半。",
+    "relate_article_list": [
+        "2008-08-20-0003"
+    ],
+    "keywords": [
+        "奥运会",
+        "中国",
+        "上",
+        "体育",
+        "评论",
+        "军团",
+        "金牌榜",
+        "优势",
+        "越南",
+        "指出",
+        "赛程",
+        "战略",
+        "乒乓球",
+        "领先",
+        "中国队",
+        "遥遥领先",
+        "初显",
+        "已过",
+        "大半",
+        "上以",
+        "动摇"
+    ],
+    "knowledge-data": {
+        "nodes": {
+            "1": {
+                "name": "乒乓球",
+                "type": "n"
+            },
+            "2": {
+                "name": "北京",
+                "type": "ns"
+            },
+            "3": {
+                "name": "遥遥领先",
+                "type": "vl"
+            },
+            "4": {
+                "name": "优势",
+                "type": "n"
+            },
+            "5": {
+                "name": "越南",
+                "type": "nsf"
+            },
+            "6": {
+                "name": "赛程",
+                "type": "n"
+            },
+            "7": {
+                "name": "东道主",
+                "type": "n"
+            },
+            "8": {
+                "name": "项目",
+                "type": "n"
+            },
+            "9": {
+                "name": "显",
+                "type": "v"
+            },
+            "10": {
+                "name": "奥运会",
+                "type": "n"
+            },
+            "11": {
+                "name": "显示",
+                "type": "v"
+            },
+            "12": {
+                "name": "大半",
+                "type": "a"
+            },
+            "13": {
+                "name": "评论",
+                "type": "n"
+            },
+            "14": {
+                "name": "上",
+                "type": "f"
+            },
+            "15": {
+                "name": "年",
+                "type": "qt"
+            },
+            "16": {
+                "name": "巨大",
+                "type": "a"
+            },
+            "17": {
+                "name": "体育",
+                "type": "n"
+            },
+            "18": {
+                "name": "领先",
+                "type": "vi"
+            },
+            "19": {
+                "name": "报",
+                "type": "n"
+            },
+            "20": {
+                "name": "奥运",
+                "type": "n"
+            },
+            "21": {
+                "name": "美国",
+                "type": "nsf"
+            },
+            "22": {
+                "name": "军团",
+                "type": "nis"
+            },
+            "23": {
+                "name": "中国队",
+                "type": "nt"
+            },
+            "24": {
+                "name": "金牌榜",
+                "type": "n"
+            },
+            "25": {
+                "name": "领先于",
+                "type": "n"
+            },
+            "26": {
+                "name": "在",
+                "type": "p"
+            },
+            "27": {
+                "name": "媒体",
+                "type": "n"
+            },
+            "28": {
+                "name": "动摇",
+                "type": "v"
+            },
+            "29": {
+                "name": "雅典",
+                "type": "ns"
+            },
+            "30": {
+                "name": "中国",
+                "type": "ns"
+            },
+            "31": {
+                "name": "战略",
+                "type": "n"
+            }
+        },
+        "links": [
+            {
+                "source": "27",
+                "target": "3",
+                "rela": "指出",
+                "type": "svo"
+            },
+            {
+                "source": "13",
+                "target": "9",
+                "rela": "指出",
+                "type": "svo"
+            },
+            {
+                "source": "13",
+                "target": "11",
+                "rela": "指出",
+                "type": "svo"
+            },
+            {
+                "source": "6",
+                "target": "12",
+                "rela": "过",
+                "type": "svo"
+            },
+            {
+                "source": "23",
+                "target": "28",
+                "rela": "还有",
+                "type": "svo"
+            },
+            {
+                "source": "5",
+                "target": "27",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "2",
+                "target": "10",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "10",
+                "target": "6",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "7",
+                "target": "22",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "30",
+                "target": "22",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "17",
+                "target": "22",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "10",
+                "target": "24",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "24",
+                "target": "14",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "30",
+                "target": "17",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "5",
+                "target": "19",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "19",
+                "target": "13",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "20",
+                "target": "31",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "1",
+                "target": "8",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "4",
+                "target": "8",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "8",
+                "target": "14",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "30",
+                "target": "31",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "15",
+                "target": "10",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "29",
+                "target": "10",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "10",
+                "target": "14",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "16",
+                "target": "4",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "4",
+                "target": "25",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "25",
+                "target": "22",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "21",
+                "target": "22",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "23",
+                "target": "4",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "26",
+                "target": "4",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "18",
+                "target": "4",
+                "rela": "修饰",
+                "type": "att"
+            }
+        ]
+    }
+}

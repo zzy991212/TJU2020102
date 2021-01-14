@@ -1,0 +1,1 @@
+{"cluster_id": "cluster_929", "topic": "", "abstract": "记者吴绮敏、莽九晨）。", "relate_article_list": ["2008-08-26-0006"], "keywords": ["记者", "吴绮敏", "莽九晨"], "knowledge-data": {"nodes": {"1": {"name": "记者", "type": "nnt"}, "2": {"name": "吴绮敏", "type": "nr"}}, "links": [{"source": "1", "target": "2", "rela": "修饰", "type": "att"}]}}

@@ -1,0 +1,291 @@
+{
+    "cluster_id": "cluster_0",
+    "topic": "丰田减少12％",
+    "abstract": "7月份美国市场汽车销量为113．6176万辆。这也是美国市场汽车销量连续9个月低于上年同期水平。其中通用、福特和克莱斯勒在美国市场的汽车销量同比分别下降了26％、15％和29％。",
+    "relate_article_list": [
+        "2008-08-01-0000"
+    ],
+    "keywords": [
+        "汽车",
+        "美国市场",
+        "公司",
+        "汽车销量",
+        "减少",
+        "丰田",
+        "日本",
+        "月份",
+        "上年",
+        "同期",
+        "三大",
+        "同比",
+        "通用",
+        "福特",
+        "克莱斯勒",
+        "八大",
+        "制造商",
+        "销售",
+        "日本丰田汽车公司",
+        "月销量",
+        "富士"
+    ],
+    "knowledge-data": {
+        "nodes": {
+            "1": {
+                "name": "汽车销量",
+                "type": "nz"
+            },
+            "2": {
+                "name": "丰田",
+                "type": "nz"
+            },
+            "3": {
+                "name": "公司",
+                "type": "nis"
+            },
+            "4": {
+                "name": "重工",
+                "type": "n"
+            },
+            "5": {
+                "name": "大",
+                "type": "a"
+            },
+            "6": {
+                "name": "月份",
+                "type": "n"
+            },
+            "7": {
+                "name": "富士",
+                "type": "ntc"
+            },
+            "8": {
+                "name": "12％",
+                "type": "m"
+            },
+            "9": {
+                "name": "福特",
+                "type": "nrf"
+            },
+            "10": {
+                "name": "汽车",
+                "type": "n"
+            },
+            "11": {
+                "name": "销量",
+                "type": "n"
+            },
+            "12": {
+                "name": "美国市场",
+                "type": "nt"
+            },
+            "13": {
+                "name": "年",
+                "type": "qt"
+            },
+            "14": {
+                "name": "同期",
+                "type": "f"
+            },
+            "15": {
+                "name": "7",
+                "type": "m"
+            },
+            "16": {
+                "name": "生产商",
+                "type": "nnd"
+            },
+            "17": {
+                "name": "7月份",
+                "type": "t"
+            },
+            "18": {
+                "name": "份额",
+                "type": "n"
+            },
+            "19": {
+                "name": "销售",
+                "type": "vn"
+            },
+            "20": {
+                "name": "美国",
+                "type": "nsf"
+            },
+            "21": {
+                "name": "成绩",
+                "type": "n"
+            },
+            "22": {
+                "name": "为首",
+                "type": "vi"
+            },
+            "23": {
+                "name": "同比",
+                "type": "n"
+            },
+            "24": {
+                "name": "日本",
+                "type": "ns"
+            },
+            "25": {
+                "name": "制造商",
+                "type": "nnd"
+            },
+            "26": {
+                "name": "在",
+                "type": "p"
+            },
+            "27": {
+                "name": "42．7％",
+                "type": "m"
+            },
+            "28": {
+                "name": "日本丰田汽车公司",
+                "type": "ntc"
+            },
+            "29": {
+                "name": "水平",
+                "type": "n"
+            }
+        },
+        "links": [
+            {
+                "source": "2",
+                "target": "8",
+                "rela": "减少",
+                "type": "svo"
+            },
+            {
+                "source": "25",
+                "target": "2",
+                "rela": "指",
+                "type": "svo"
+            },
+            {
+                "source": "17",
+                "target": "1",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "12",
+                "target": "1",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "13",
+                "target": "14",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "14",
+                "target": "29",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "10",
+                "target": "16",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "28",
+                "target": "11",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "26",
+                "target": "1",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "1",
+                "target": "23",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "15",
+                "target": "6",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "22",
+                "target": "25",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "24",
+                "target": "25",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "5",
+                "target": "10",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "10",
+                "target": "25",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "25",
+                "target": "18",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "19",
+                "target": "18",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "9",
+                "target": "27",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "19",
+                "target": "21",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "20",
+                "target": "3",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "5",
+                "target": "3",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "10",
+                "target": "3",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "7",
+                "target": "4",
+                "rela": "修饰",
+                "type": "att"
+            }
+        ]
+    }
+}

@@ -21,7 +21,7 @@ def get_date_list(start,end):
         date = date + datetime.timedelta(1)
     return date_list
 
-filepath = "./cluster/2008"
+filepath = "./cluster/lhmnb"
 
 text = []
 get_file_list(filepath)

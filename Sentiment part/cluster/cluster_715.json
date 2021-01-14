@@ -1,0 +1,1 @@
+{"cluster_id": "cluster_715", "topic": "", "abstract": "记者孙承斌、邹声文）。", "relate_article_list": ["2008-08-20-0006"], "keywords": ["记者", "孙承斌", "邹声文"], "knowledge-data": {"nodes": {"1": {"name": "记者", "type": "nnt"}, "2": {"name": "孙承斌", "type": "nr"}}, "links": [{"source": "1", "target": "2", "rela": "修饰", "type": "att"}]}}

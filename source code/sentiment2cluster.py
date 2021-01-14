@@ -14,7 +14,7 @@ with open("Sentiment.json","r",encoding="UTF-8") as f:
     sen_dic = json.loads(f.read())
 # print(sen_dic)
 
-filepath = "./cluster/2008"
+filepath = "./cluster/nlsnb"
 
 text = []
 get_file_list(filepath)

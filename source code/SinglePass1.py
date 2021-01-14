@@ -167,10 +167,13 @@ class SinglePass_v1():
     def save_as_json(self,cluster,keyword):
         filepath = "./cluster"
         center_id = cluster.center_doc_id
+        # print("---")
+        # print(cluster.center_doc_id)
         year_id = center_id.split("-")[0]
-        if not os.path.exists(filepath+"/"+year_id):
-            os.mkdir(filepath+"/"+year_id)
-        filepath = filepath+"/"+year_id
+        month_id = center_id.split("-")[1]
+        if not os.path.exists(filepath+"/"+year_id+"-"+month_id):
+            os.mkdir(filepath+"/"+year_id+"-"+month_id)
+        filepath = filepath+"/"+year_id+"-"+month_id
         dic = {}
         dic["cluster_id"] = cluster.cluster_id
         dic["topic"] = ""
@@ -188,9 +191,11 @@ def get_file_list(dir):
         filepath = os.path.join(dir,file)
         if os.path.isfile(filepath):
             if filepath[-3:] == 'fin':
+                #print(filepath.split("."))
                 f = open(filepath,"r",encoding="utf8")
                 data = f.read()
-                doc_id = filepath.split(".")[0][-15:]
+                doc_id = filepath.split(".")[1][-15:]
+                #print(doc_id)
                 # print(doc_id)
                 docs.append([doc_id,data])
                 f.close()

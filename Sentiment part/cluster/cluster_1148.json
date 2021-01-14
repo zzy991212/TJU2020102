@@ -1,0 +1,1625 @@
+{
+    "cluster_id": "cluster_1148",
+    "topic": "公司投资项目",
+    "abstract": "为向中国企业推介伦敦的投资环境。伊敏公司是怎么做到对环境几乎没有任何影响的。必然会影响到企业的经济效益。伊敏煤电公司不仅环保到位。是伊敏煤电公司多年来坚持不懈地按照循环经济模式经营企业。",
+    "relate_article_list": [
+        "2008-08-31-0051"
+    ],
+    "keywords": [
+        "伊敏",
+        "企业",
+        "公司",
+        "体验",
+        "官员",
+        "文化",
+        "电厂",
+        "煤电",
+        "百姓",
+        "循环",
+        "投资",
+        "创新",
+        "轧辊",
+        "草原",
+        "汪曾祺",
+        "灰渣",
+        "中钢",
+        "邢机",
+        "室温",
+        "阆中",
+        "猛将"
+    ],
+    "knowledge-data": {
+        "nodes": {
+            "1": {
+                "name": "他",
+                "type": "rr"
+            },
+            "2": {
+                "name": "状况",
+                "type": "n"
+            },
+            "3": {
+                "name": "痛苦",
+                "type": "an"
+            },
+            "4": {
+                "name": "灰渣",
+                "type": "n"
+            },
+            "5": {
+                "name": "冶金",
+                "type": "n"
+            },
+            "6": {
+                "name": "该",
+                "type": "rz"
+            },
+            "7": {
+                "name": "周边",
+                "type": "n"
+            },
+            "8": {
+                "name": "朋友",
+                "type": "n"
+            },
+            "9": {
+                "name": "千百年来",
+                "type": "nz"
+            },
+            "10": {
+                "name": "一系列",
+                "type": "b"
+            },
+            "11": {
+                "name": "韵致",
+                "type": "n"
+            },
+            "12": {
+                "name": "汪曾祺",
+                "type": "nr"
+            },
+            "13": {
+                "name": "三产",
+                "type": "n"
+            },
+            "14": {
+                "name": "板带",
+                "type": "nz"
+            },
+            "15": {
+                "name": "全景",
+                "type": "n"
+            },
+            "16": {
+                "name": "官员",
+                "type": "nnt"
+            },
+            "17": {
+                "name": "感受",
+                "type": "v"
+            },
+            "18": {
+                "name": "国外",
+                "type": "s"
+            },
+            "19": {
+                "name": "环境",
+                "type": "n"
+            },
+            "20": {
+                "name": "机构",
+                "type": "n"
+            },
+            "21": {
+                "name": "含炭量",
+                "type": "n"
+            },
+            "22": {
+                "name": "有",
+                "type": "vyou"
+            },
+            "23": {
+                "name": "原来",
+                "type": "d"
+            },
+            "24": {
+                "name": "国",
+                "type": "n"
+            },
+            "25": {
+                "name": "核心",
+                "type": "n"
+            },
+            "26": {
+                "name": "冷",
+                "type": "a"
+            },
+            "27": {
+                "name": "多少",
+                "type": "ry"
+            },
+            "28": {
+                "name": "模式",
+                "type": "n"
+            },
+            "29": {
+                "name": "组成",
+                "type": "v"
+            },
+            "30": {
+                "name": "当中",
+                "type": "f"
+            },
+            "31": {
+                "name": "这样",
+                "type": "rzv"
+            },
+            "32": {
+                "name": "听不懂",
+                "type": "v"
+            },
+            "33": {
+                "name": "坑口",
+                "type": "n"
+            },
+            "34": {
+                "name": "责任",
+                "type": "n"
+            },
+            "35": {
+                "name": "利益",
+                "type": "n"
+            },
+            "36": {
+                "name": "高速钢",
+                "type": "nz"
+            },
+            "37": {
+                "name": "现代化",
+                "type": "vn"
+            },
+            "38": {
+                "name": "项",
+                "type": "q"
+            },
+            "39": {
+                "name": "力度",
+                "type": "n"
+            },
+            "40": {
+                "name": "之间",
+                "type": "f"
+            },
+            "41": {
+                "name": "伦敦",
+                "type": "nrf"
+            },
+            "42": {
+                "name": "烟囱",
+                "type": "n"
+            },
+            "43": {
+                "name": "提案",
+                "type": "n"
+            },
+            "44": {
+                "name": "项目",
+                "type": "n"
+            },
+            "45": {
+                "name": "句话",
+                "type": "q"
+            },
+            "46": {
+                "name": "个人",
+                "type": "n"
+            },
+            "47": {
+                "name": "煤",
+                "type": "n"
+            },
+            "48": {
+                "name": "大院",
+                "type": "n"
+            },
+            "49": {
+                "name": "产品",
+                "type": "n"
+            },
+            "50": {
+                "name": "座",
+                "type": "q"
+            },
+            "51": {
+                "name": "销售收入",
+                "type": "nz"
+            },
+            "52": {
+                "name": "60",
+                "type": "m"
+            },
+            "53": {
+                "name": "阆中",
+                "type": "ns"
+            },
+            "54": {
+                "name": "世界",
+                "type": "n"
+            },
+            "55": {
+                "name": "锅炉",
+                "type": "n"
+            },
+            "56": {
+                "name": "工作",
+                "type": "vn"
+            },
+            "57": {
+                "name": "定",
+                "type": "v"
+            },
+            "58": {
+                "name": "这位",
+                "type": "r"
+            },
+            "59": {
+                "name": "规模",
+                "type": "n"
+            },
+            "60": {
+                "name": "国内",
+                "type": "s"
+            },
+            "61": {
+                "name": "中的",
+                "type": "v"
+            },
+            "62": {
+                "name": "工资",
+                "type": "n"
+            },
+            "63": {
+                "name": "进出",
+                "type": "v"
+            },
+            "64": {
+                "name": "电",
+                "type": "n"
+            },
+            "65": {
+                "name": "大中型",
+                "type": "b"
+            },
+            "66": {
+                "name": "此",
+                "type": "rzs"
+            },
+            "67": {
+                "name": "中",
+                "type": "f"
+            },
+            "68": {
+                "name": "内力",
+                "type": "n"
+            },
+            "69": {
+                "name": "经验",
+                "type": "n"
+            },
+            "70": {
+                "name": "脱硫",
+                "type": "nz"
+            },
+            "71": {
+                "name": "某种",
+                "type": "rz"
+            },
+            "72": {
+                "name": "特别是在",
+                "type": "l"
+            },
+            "73": {
+                "name": "品质",
+                "type": "n"
+            },
+            "74": {
+                "name": "大小",
+                "type": "n"
+            },
+            "75": {
+                "name": "短期行为",
+                "type": "nz"
+            },
+            "76": {
+                "name": "奥秘",
+                "type": "n"
+            },
+            "77": {
+                "name": "中国",
+                "type": "ns"
+            },
+            "78": {
+                "name": "材料",
+                "type": "n"
+            },
+            "79": {
+                "name": "室温",
+                "type": "n"
+            },
+            "80": {
+                "name": "标志",
+                "type": "n"
+            },
+            "81": {
+                "name": "电厂",
+                "type": "nis"
+            },
+            "82": {
+                "name": "企业",
+                "type": "n"
+            },
+            "83": {
+                "name": "绿色",
+                "type": "n"
+            },
+            "84": {
+                "name": "市场",
+                "type": "n"
+            },
+            "85": {
+                "name": "配套",
+                "type": "vn"
+            },
+            "86": {
+                "name": "煤炭",
+                "type": "n"
+            },
+            "87": {
+                "name": "生态",
+                "type": "n"
+            },
+            "88": {
+                "name": "行业",
+                "type": "n"
+            },
+            "89": {
+                "name": "猛将",
+                "type": "n"
+            },
+            "90": {
+                "name": "位",
+                "type": "q"
+            },
+            "91": {
+                "name": "外",
+                "type": "f"
+            },
+            "92": {
+                "name": "恢复",
+                "type": "v"
+            },
+            "93": {
+                "name": "投石问路",
+                "type": "vl"
+            },
+            "94": {
+                "name": "铸钢",
+                "type": "nz"
+            },
+            "95": {
+                "name": "循环",
+                "type": "vn"
+            },
+            "96": {
+                "name": "伊敏",
+                "type": "ns"
+            },
+            "97": {
+                "name": "煤电",
+                "type": "n"
+            },
+            "98": {
+                "name": "同志",
+                "type": "n"
+            },
+            "99": {
+                "name": "高端",
+                "type": "nz"
+            },
+            "100": {
+                "name": "肺腑之言",
+                "type": "n"
+            },
+            "101": {
+                "name": "张飞",
+                "type": "nr"
+            },
+            "102": {
+                "name": "的",
+                "type": "ude1"
+            },
+            "103": {
+                "name": "城市",
+                "type": "n"
+            },
+            "104": {
+                "name": "呼伦贝尔",
+                "type": "ns"
+            },
+            "105": {
+                "name": "方面",
+                "type": "n"
+            },
+            "106": {
+                "name": "心思",
+                "type": "n"
+            },
+            "107": {
+                "name": "台湾",
+                "type": "ns"
+            },
+            "108": {
+                "name": "角度",
+                "type": "n"
+            },
+            "109": {
+                "name": "中钢",
+                "type": "nt"
+            },
+            "110": {
+                "name": "摄氏度",
+                "type": "q"
+            },
+            "111": {
+                "name": "经营",
+                "type": "vn"
+            },
+            "112": {
+                "name": "家",
+                "type": "q"
+            },
+            "113": {
+                "name": "成果",
+                "type": "n"
+            },
+            "114": {
+                "name": "公司",
+                "type": "nis"
+            },
+            "115": {
+                "name": "华能",
+                "type": "nz"
+            },
+            "116": {
+                "name": "一片",
+                "type": "m"
+            },
+            "117": {
+                "name": "热情",
+                "type": "an"
+            },
+            "118": {
+                "name": "大",
+                "type": "a"
+            },
+            "119": {
+                "name": "机",
+                "type": "ng"
+            },
+            "120": {
+                "name": "岁",
+                "type": "qt"
+            },
+            "121": {
+                "name": "环保",
+                "type": "n"
+            },
+            "122": {
+                "name": "一望无际",
+                "type": "vl"
+            },
+            "123": {
+                "name": "这个",
+                "type": "rz"
+            },
+            "124": {
+                "name": "当年",
+                "type": "t"
+            },
+            "125": {
+                "name": "草原",
+                "type": "n"
+            },
+            "126": {
+                "name": "生活",
+                "type": "vn"
+            },
+            "127": {
+                "name": "科技成果",
+                "type": "nz"
+            },
+            "128": {
+                "name": "投入量",
+                "type": "n"
+            },
+            "129": {
+                "name": "脆弱",
+                "type": "a"
+            },
+            "130": {
+                "name": "多",
+                "type": "a"
+            },
+            "131": {
+                "name": "创新",
+                "type": "vi"
+            },
+            "132": {
+                "name": "血缘",
+                "type": "n"
+            },
+            "133": {
+                "name": "上",
+                "type": "f"
+            },
+            "134": {
+                "name": "一个",
+                "type": "mq"
+            },
+            "135": {
+                "name": "邢机",
+                "type": "nr"
+            },
+            "136": {
+                "name": "古代",
+                "type": "t"
+            },
+            "137": {
+                "name": "具有",
+                "type": "v"
+            },
+            "138": {
+                "name": "经济效益",
+                "type": "n"
+            },
+            "139": {
+                "name": "影响力",
+                "type": "n"
+            },
+            "140": {
+                "name": "一体化",
+                "type": "vn"
+            },
+            "141": {
+                "name": "美文",
+                "type": "n"
+            },
+            "142": {
+                "name": "全员",
+                "type": "n"
+            },
+            "143": {
+                "name": "级别",
+                "type": "n"
+            },
+            "144": {
+                "name": "技术",
+                "type": "n"
+            },
+            "145": {
+                "name": "深处",
+                "type": "s"
+            },
+            "146": {
+                "name": "我们",
+                "type": "rr"
+            },
+            "147": {
+                "name": "建厂",
+                "type": "v"
+            },
+            "148": {
+                "name": "基石",
+                "type": "n"
+            },
+            "149": {
+                "name": "百姓",
+                "type": "n"
+            },
+            "150": {
+                "name": "大型",
+                "type": "b"
+            },
+            "151": {
+                "name": "科学",
+                "type": "n"
+            },
+            "152": {
+                "name": "体验",
+                "type": "v"
+            },
+            "153": {
+                "name": "科技",
+                "type": "n"
+            },
+            "154": {
+                "name": "锻钢",
+                "type": "nz"
+            },
+            "155": {
+                "name": "文化",
+                "type": "n"
+            },
+            "156": {
+                "name": "投资",
+                "type": "vn"
+            },
+            "157": {
+                "name": "在",
+                "type": "p"
+            },
+            "158": {
+                "name": "轧辊",
+                "type": "n"
+            },
+            "159": {
+                "name": "轧制",
+                "type": "v"
+            },
+            "160": {
+                "name": "渣",
+                "type": "ng"
+            },
+            "161": {
+                "name": "体系",
+                "type": "n"
+            },
+            "162": {
+                "name": "关键所在",
+                "type": "n"
+            },
+            "163": {
+                "name": "下",
+                "type": "f"
+            }
+        },
+        "links": [
+            {
+                "source": "114",
+                "target": "44",
+                "rela": "投资",
+                "type": "svo"
+            },
+            {
+                "source": "114",
+                "target": "156",
+                "rela": "用于",
+                "type": "svo"
+            },
+            {
+                "source": "16",
+                "target": "152",
+                "rela": "是",
+                "type": "svo"
+            },
+            {
+                "source": "77",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "41",
+                "target": "156",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "156",
+                "target": "20",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "156",
+                "target": "19",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "112",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "115",
+                "target": "96",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "96",
+                "target": "81",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "81",
+                "target": "15",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "104",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "118",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "125",
+                "target": "145",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "72",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "129",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "81",
+                "target": "81",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "122",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "81",
+                "target": "42",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "150",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "97",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "125",
+                "target": "133",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "81",
+                "target": "70",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "96",
+                "target": "114",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "64",
+                "target": "114",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "82",
+                "target": "34",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "96",
+                "target": "47",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "81",
+                "target": "55",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "86",
+                "target": "81",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "160",
+                "target": "81",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "63",
+                "target": "81",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "96",
+                "target": "98",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "91",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "116",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "7",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "83",
+                "target": "125",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "125",
+                "target": "87",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "114",
+                "target": "128",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "92",
+                "target": "156",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "96",
+                "target": "76",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "82",
+                "target": "121",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "82",
+                "target": "138",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "111",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "40",
+                "target": "95",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "151",
+                "target": "95",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "146",
+                "target": "114",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "13",
+                "target": "114",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "146",
+                "target": "4",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "27",
+                "target": "4",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "4",
+                "target": "21",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "97",
+                "target": "95",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "123",
+                "target": "95",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "95",
+                "target": "38",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "33",
+                "target": "81",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "81",
+                "target": "28",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "112",
+                "target": "97",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "150",
+                "target": "97",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "140",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "18",
+                "target": "97",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "156",
+                "target": "39",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "96",
+                "target": "69",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "82",
+                "target": "75",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "134",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "130",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "158",
+                "target": "159",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "147",
+                "target": "135",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "109",
+                "target": "135",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "112",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "60",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "65",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "85",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "18",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "99",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "158",
+                "target": "49",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "6",
+                "target": "114",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "114",
+                "target": "59",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "54",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "158",
+                "target": "88",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "131",
+                "target": "62",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "150",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "94",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "74",
+                "target": "131",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "131",
+                "target": "113",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "142",
+                "target": "131",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "131",
+                "target": "148",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "131",
+                "target": "56",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "131",
+                "target": "43",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "105",
+                "target": "131",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "131",
+                "target": "117",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "5",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "153",
+                "target": "131",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "131",
+                "target": "161",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "158",
+                "target": "78",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "114",
+                "target": "127",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "109",
+                "target": "119",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "137",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "36",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "158",
+                "target": "144",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "82",
+                "target": "51",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "37",
+                "target": "82",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "10",
+                "target": "131",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "82",
+                "target": "14",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "154",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "26",
+                "target": "158",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "82",
+                "target": "25",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "82",
+                "target": "139",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "107",
+                "target": "109",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "135",
+                "target": "84",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "149",
+                "target": "30",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "45",
+                "target": "16",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "22",
+                "target": "16",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "149",
+                "target": "35",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "152",
+                "target": "67",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "57",
+                "target": "16",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "66",
+                "target": "79",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "157",
+                "target": "152",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "79",
+                "target": "163",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "126",
+                "target": "152",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "23",
+                "target": "79",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "110",
+                "target": "79",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "143",
+                "target": "16",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "16",
+                "target": "48",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "90",
+                "target": "16",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "3",
+                "target": "152",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "102",
+                "target": "152",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "149",
+                "target": "8",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "152",
+                "target": "108",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "149",
+                "target": "32",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "149",
+                "target": "17",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "149",
+                "target": "106",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "120",
+                "target": "12",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "12",
+                "target": "46",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "141",
+                "target": "12",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "12",
+                "target": "93",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "12",
+                "target": "100",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "52",
+                "target": "12",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "12",
+                "target": "2",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "61",
+                "target": "155",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "155",
+                "target": "11",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "24",
+                "target": "89",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "89",
+                "target": "101",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "53",
+                "target": "162",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "50",
+                "target": "155",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "103",
+                "target": "155",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "136",
+                "target": "155",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "155",
+                "target": "29",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "155",
+                "target": "80",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "1",
+                "target": "89",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "31",
+                "target": "89",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "124",
+                "target": "89",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "58",
+                "target": "89",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "89",
+                "target": "9",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "71",
+                "target": "155",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "155",
+                "target": "73",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "155",
+                "target": "132",
+                "rela": "修饰",
+                "type": "att"
+            },
+            {
+                "source": "155",
+                "target": "68",
+                "rela": "修饰",
+                "type": "att"
+            }
+        ]
+    }
+}

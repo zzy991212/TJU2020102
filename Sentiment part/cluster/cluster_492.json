@@ -1,0 +1,1 @@
+{"cluster_id": "cluster_492", "topic": "", "abstract": "本报记者  李石营摄。", "relate_article_list": ["2008-08-13-0031"], "keywords": ["邹市", "明", "比赛", "中", "本报记者", "李石营", "摄"], "knowledge-data": {"nodes": {"1": {"name": "中", "type": "f"}, "2": {"name": "比赛", "type": "vn"}}, "links": [{"source": "2", "target": "1", "rela": "修饰", "type": "att"}]}}
