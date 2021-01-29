@@ -1,1 +1,0 @@
-{"cluster_id": "cluster_1063", "topic": "", "abstract": "记者邹声文、张旭东）。", "relate_article_list": ["2008-01-26-0024"], "keywords": ["记者", "邹声文", "张旭东"], "EntityTopK": ["邹声文", "记者", "张旭东"], "knowledge-data": {"nodes": {"1": {"name": "邹声文", "type": "nr"}, "2": {"name": "记者", "type": "nnt"}}, "links": [{"source": "2", "target": "1", "rela": "修饰", "type": "att"}]}}
