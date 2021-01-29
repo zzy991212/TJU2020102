@@ -1,0 +1,1 @@
+{"cluster_id": "cluster_623", "topic": "", "abstract": "店。", "relate_article_list": ["2008-01-15-0048"], "keywords": ["图为", "天津", "一家", "狗不理", "店"], "EntityTopK": ["狗不理", "店", "天津", "一家"], "knowledge-data": {"nodes": {"1": {"name": "天津", "type": "ns"}, "2": {"name": "一家", "type": "n"}}, "links": [{"source": "1", "target": "2", "rela": "修饰", "type": "att"}]}}
